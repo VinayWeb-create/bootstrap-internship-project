@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInnovate - About Us</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .team-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .stat-box {
+            border-left: 4px solid #0d6efd;
+        }
+        
+        footer {
+            background-color: #212529;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: #0d6efd;
+        }
+        
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: #0d6efd;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-dot {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> TechInnovate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">About TechInnovate</h1>
+            <p class="lead">We are a team of passionate innovators dedicated to transforming businesses through technology.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="bi bi-bullseye fs-3"></i>
+                                </div>
+                                <h2 class="h3 mb-0">Our Mission</h2>
+                            </div>
+                            <p class="text-muted mb-0">To empower businesses worldwide with innovative technology solutions that drive growth, efficiency, and digital transformation. We believe in creating sustainable value through cutting-edge innovation and exceptional service delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-success text-white rounded-circle p-3 me-3">
+                                    <i class="bi bi-eye fs-3"></i>
+                                </div>
+                                <h2 class="h3 mb-0">Our Vision</h2>
+                            </div>
+                            <p class="text-muted mb-0">To be the global leader in technology innovation, recognized for our excellence, integrity, and positive impact on society. We envision a future where technology seamlessly enhances every aspect of business operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h2 class="display-4 fw-bold text-primary mb-2">500+</h2>
+                        <p class="text-muted mb-0">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h2 class="display-4 fw-bold text-primary mb-2">300+</h2>
+                        <p class="text-muted mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h2 class="display-4 fw-bold text-primary mb-2">50+</h2>
+                        <p class="text-muted mb-0">Team Members</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <h2 class="display-4 fw-bold text-primary mb-2">15+</h2>
+                        <p class="text-muted mb-0">Countries Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Timeline -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Our Journey</h2>
+                <p class="lead text-muted">From humble beginnings to industry leaders</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-md-6 text-md-end">
+                                    <div class="card border-0 shadow-sm mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">2020 - Foundation</h5>
+                                            <p class="card-text text-muted">TechInnovate was founded by a group of passionate technologists with a vision to revolutionize the industry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="timeline-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="timeline-dot"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 shadow-sm mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">2022 - Major Expansion</h5>
+                                            <p class="card-text text-muted">Expanded operations to 10 countries and doubled our team size to meet growing demand.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-md-6 text-md-end">
+                                    <div class="card border-0 shadow-sm mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">2024 - Innovation Award</h5>
+                                            <p class="card-text text-muted">Received the Global Tech Innovation Award for our groundbreaking AI solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="timeline-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="timeline-dot"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 shadow-sm mb-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">2026 - Future Forward</h5>
+                                            <p class="card-text text-muted">Continuing to push boundaries with cutting-edge technology and sustainable solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Meet Our Team</h2>
+                <p class="lead text-muted">The brilliant minds behind TechInnovate</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm team-card">
+                        <img src="https://i.pravatar.cc/300?img=12" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Sarah Johnson</h5>
+                            <p class="text-muted small mb-3">CEO & Founder</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-info"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm team-card">
+                        <img src="https://i.pravatar.cc/300?img=33" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Michael Chen</h5>
+                            <p class="text-muted small mb-3">CTO</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-info"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm team-card">
+                        <img src="https://i.pravatar.cc/300?img=47" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Emily Rodriguez</h5>
+                            <p class="text-muted small mb-3">Head of Design</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-info"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm team-card">
+                        <img src="https://i.pravatar.cc/300?img=68" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">David Kim</h5>
+                            <p class="text-muted small mb-3">Lead Developer</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-info"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Our Core Values</h2>
+                <p class="lead text-muted">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-lightbulb fs-2"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p class="text-muted">We constantly push boundaries and explore new possibilities to stay ahead of the curve.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-success bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-heart fs-2"></i>
+                        </div>
+                        <h4>Integrity</h4>
+                        <p class="text-muted">We maintain the highest ethical standards in all our business relationships and operations.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-info bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-star fs-2"></i>
+                        </div>
+                        <h4>Excellence</h4>
+                        <p class="text-muted">We strive for excellence in every project, delivering quality that exceeds expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3"><i class="bi bi-lightning-charge-fill"></i> TechInnovate</h5>
+                    <p class="text-white-50">Empowering businesses with innovative technology solutions since 2020.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h6 class="mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Mobile Apps</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Cloud Solutions</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">AI & ML</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="mb-3">Contact Info</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> info@techinnovate.com</li>
+                        <li class="mb-2"><i class="bi bi-phone"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-white opacity-25">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2026 TechInnovate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
