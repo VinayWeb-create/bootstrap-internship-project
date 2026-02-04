@@ -272,11 +272,11 @@ The project incorporates the following Bootstrap components:
 
 ### Option 2: Netlify
 1. Push code to GitHub
-2. Go to [netlify.com](https://www.netlify.com)
+2. Go to vercel.com
 3. Click "Add new site" → "Import an existing project"
 4. Connect GitHub and select repository
 5. Click "Deploy site"
-6. Access at: `https://your-site-name.netlify.app`
+6. Access at: `https://bootstrap-internship-project.vercel.app/`
 
 ## 📈 Key Learnings
 
